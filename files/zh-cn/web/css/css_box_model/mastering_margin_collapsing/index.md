@@ -12,7 +12,7 @@ slug: Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
 有三种情况会形成外边距重叠：
 
 - 同一层相邻元素之间
-  - : 相邻的两个元素之间的外边距重叠，除非后一个元素加上[clear-fix 清除浮动](/zh-CN/docs/Web/CSS/clear)。
+  - : 相邻的两个元素之间的外边距重叠，除非后一个元素需要使用[clear](/zh-CN/docs/Web/CSS/clear)来清除浮动。
 
 ```html
 <style>
