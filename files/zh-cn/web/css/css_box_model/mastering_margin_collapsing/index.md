@@ -31,7 +31,7 @@ p:nth-child(2){
 这个例子如果以为边界会合并的话，理所当然会猜测上下 2 个元素会合并一个 100px 的边界范围，但其实会发生边界折叠，只会挑选最大边界范围留下，所以这个例子的边界范围其实是 87px。
 
 - 没有内容将父元素和后代元素分开
-  - : 如果没有边框{{cssxref("border")}}，内边距{{cssxref("padding")}}，行内内容，也没有创建[块级格式上下文](/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)或[清除浮动](/zh-CN/docs/Web/CSS/clear)来分开一个块级元素的上边界{{cssxref("margin-top")}} 与其内一个或多个后代块级元素的上边界{{cssxref("margin-top")}}；或没有边框，内边距，行内内容，高度{{cssxref("height")}}，最小高度{{cssxref("min-height")}}或 最大高度{{cssxref("max-height")}} 来分开一个块级元素的下边界{{cssxref("margin-bottom")}}与其内的一个或多个后代后代块元素的下边界{{cssxref("margin-bottom")}}，则就会出现父块元素和其内后代块元素外边界重叠，重叠部分最终会溢出到父级块元素外面。
+  - : 如果没有边框{{cssxref("border")}}，内边距{{cssxref("padding")}}，行内内容，也没有创建[块级格式上下文](/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)或[清除浮动](/zh-CN/docs/Web/CSS/clear)来分开一个块级元素的上边界{{cssxref("margin-top")}} 与其内一个或多个后代块级元素的上边界{{cssxref("margin-top")}}；或没有边框，内边距，行内内容，高度{{cssxref("height")}}，最小高度{{cssxref("min-height")}} 来分开一个块级元素的下边界{{cssxref("margin-bottom")}}与其内的一个或多个后代后代块元素的下边界{{cssxref("margin-bottom")}}，则就会出现父块元素和其内后代块元素外边界重叠，重叠部分最终会溢出到父级块元素外面。
 
 ```html
 <style type="text/css">
